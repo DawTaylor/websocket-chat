@@ -4,7 +4,8 @@ import SendBox from './components/SendBox';
 import ChatList from './components/ChatList';
 import LoginBox from './components/LoginBox';
 
-const socket = openSocket('https://websocket-srv.now.sh');
+// Connect to the Socket
+const socket = openSocket('http://localhost:5000');
 
 class App extends Component {
   constructor(props) {
